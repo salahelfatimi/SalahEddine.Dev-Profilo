@@ -1,0 +1,79 @@
+export const FrontEnd = 
+[{
+    "id":1,
+    "languageName":"Html",
+    "languageImage":"/html.png",
+    "languageProgress":100
+},
+{
+    "id":2,
+    "languageName":"Css",
+    "languageImage":"/css.png",
+    "languageProgress":50
+},{
+    "id":3,
+    "languageName":"Tailwind Css",
+    "languageImage":"/tailwindcss.jpg",
+    "languageProgress":60
+},{
+    "id":4,
+    "languageName":"Next.js",
+    "languageImage":"/next.png",
+    "languageProgress":60
+},{
+    "id":5,
+    "languageName":"Vite",
+    "languageImage":"/Vite.png",
+    "languageProgress":70
+},{
+    "id":6,
+    "languageName":"React",
+    "languageImage":"/react.png",
+    "languageProgress":70
+},{
+    "id":7,
+    "languageName":"JS",
+    "languageImage":"/javascript.png",
+    "languageProgress":70
+},{
+    "id":8,
+    "languageName":"Redux",
+    "languageImage":"/Redux.png",
+    "languageProgress":40
+}]
+export const BackEnd = 
+[{
+    "id":1,
+    "languageName":"Laravel",
+    "languageImage":"/Laravel.png",
+    "languageProgress":50
+},
+{
+    "id":2,
+    "languageName":"PHP",
+    "languageImage":"/PHP.png",
+    "languageProgress":50
+},{
+    "id":3,
+    "languageName":"MongoDB",
+    "languageImage":"/mongoDB.png",
+    "languageProgress":30
+},{
+    "id":4,
+    "languageName":"sql",
+    "languageImage":"/Sql.jpg",
+    "languageProgress":50
+}]
+export const Designe = 
+[{
+    "id":1,
+    "languageName":"Figma",
+    "languageImage":"/Figma.png",
+    "languageProgress":50
+},
+{
+    "id":2,
+    "languageName":"Canva",
+    "languageImage":"/Canva.png",
+    "languageProgress":50
+}]

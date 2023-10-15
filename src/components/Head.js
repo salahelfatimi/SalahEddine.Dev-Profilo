@@ -1,9 +1,9 @@
 "use client"
 import Image from 'next/image'
+import { FrontEnd,BackEnd,Designe } from '@/json/language'
 import { useState } from 'react'
 
-function Head(){
-    const [width,setWidth]=useState(0)
+async function   Head(){
     return (
         <>
             <div>
@@ -28,63 +28,64 @@ function Head(){
                             </div>
                         </div>
                         <div className="space-y-12">
-                       
                             <div className="text-center font-mono">
                                 <span className=" font-extrabold text-3xl text-black border-b-4 border-black">Tech Stack</span>
-
                             </div>
-                            
-                            <div className=" space-y-8 ">
-                                <div >
-                                    <div className="w-[100%] bg-gray-200 rounded-full ">
-                                        <div className="bg-[#148bfb] text-xs font-medium text-blue-100 text-center  leading-none rounded-full" style={{ width: `${width}% `, transition: 'width 0.5s ease' }}> {width}%</div>
-                                    </div>
-                                </div>      
-                                <div className="flex flex-col lg:flex-row  items-center  gap-10">
+                            <div className="  grid grid-cols-1 lg:grid-cols-2  gap-8 ">                         
+                                <div className=" space-y-6  text-center">
                                     <span className="text-black font-bold  text-2xl">Front-End </span>
-                                    <div className=" lg:flex grid grid-cols-2 items-center   gap-8">
-                                        
-                                        <Image  onMouseEnter={() => setWidth(50)} onMouseLeave={() => setWidth(0)} className="rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-150"   src="/html.png" width={60} height={60} alt="html" />
-                                        <Image onMouseEnter={() => setWidth(40)} onMouseLeave={() => setWidth(0)} className="rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-150"  src="/css.png" width={60} height={60} alt="css" />
-                                        <Image onMouseEnter={() => setWidth(100)} onMouseLeave={() => setWidth(0)} className="rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-150"  src="/tailwindcss.jpg" width={60} height={60} alt="tailwindcss" />
-                                        <Image className="rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-150"  src="/next.png" width={60} height={60} alt="Next.js" />
-                                        <Image className="rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-150"  src="/Vite.png" width={60} height={60} alt="Vite" />
-                                        <Image className="rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-150"  src="/react.png" width={60} height={60} alt="react" />
-                                        <Image className="rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-150"  src="/javascript.png" width={60} height={60} alt="javascript" />
-                                        <Image className="rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-150"  src="/Redux.png" width={60} height={60} alt="Redux" />
-
-
-
+                                    <div className=" grid grid-cols-1 lg:grid-cols-1 gap-4">
+                                    {
+                                        FrontEnd.map((res,index)=>(
+                                            <div key={index} className='flex items-center gap-4'>
+                                                <Image  className=""   src={res.languageImage} width={50} height={50} alt={res.languageName} />
+                                                <div className={`rounded-md w-[100%]   p-4 ` }>
+                                                <div className="w-full bg-gray-200 rounded-full h-2.5 ">
+                                                    <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: `${res.languageProgress}% `, transition: 'width 0.5s ease' }}></div>
+                                                </div>                                                    
+                                                </div>  
+                                            </div>   
+                                        ))                                       
+                                    }                                   
                                     </div>
-                                    
                                 </div>
-                              
-                                <div className="flex flex-col lg:flex-row  items-center  gap-12">
+                                <div className="space-y-6 text-center">
                                     <span className="text-black font-bold  text-2xl">Back-End </span>
-                                    <div className=" lg:flex grid grid-cols-2 items-center  gap-4">
-                                        
-                                        <Image className="rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-150"   src="/Laravel.png" width={60} height={60} alt="Laravel" />
-                                        <Image className="rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-150"  src="/PHP.png" width={60} height={60} alt="PHP" />
-                                        <Image className="rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-150"  src="/Sql.jpg" width={60} height={60} alt="Sql" />
-                                        <Image className="rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-150"  src="/mongoDB.png" width={60} height={60} alt="mongoDB" />
-                                        
-
-
-
+                                    <div className=" grid grid-cols-1 lg:grid-cols-1 gap-4">
+                                    {
+                                        BackEnd.map((res,index)=>(
+                                            <div key={index} className='flex items-center gap-4'>
+                                                <Image  className=" "   src={res.languageImage} width={50} height={50} alt={res.languageName} />
+                                                <div className={`rounded-md w-[100%]   p-4 ` }>
+                                                <div className="w-full bg-gray-200 rounded-full h-2.5 ">
+                                                    <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: `${res.languageProgress}% `, transition: 'width 0.5s ease' }}></div>
+                                                </div>
+                                                    
+                                                </div>  
+                                            </div>   
+                                        ))    
+                                    }                                                                 
                                     </div>
-                                </div>
-                                <div className="flex flex-col lg:flex-row  items-center gap-[3.8rem]">
+                                    <div className="space-y-6 text-center">
                                     <span className="text-black font-bold  text-2xl">Designe</span>
-                                    <div className=" lg:flex grid grid-cols-2   gap-4">
-                                        
-                                        <Image className="rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-150"   src="/Figma.png" width={60} height={60} alt="Laravel" />
-                                        <Image className="rounded-xl transition-transform duration-500 ease-in-out transform hover:scale-150"  src="/Canva.png" width={60} height={60} alt="PHP" />
-                                       
-
-
-
+                                    <div className=" grid grid-cols-1 lg:grid-cols-1 gap-4">
+                                    {
+                                        Designe.map((res,index)=>(
+                                            <div key={index} className='flex items-center gap-4'>
+                                                <Image  className=" "   src={res.languageImage} width={50} height={50} alt={res.languageName} />
+                                                <div className={`rounded-md w-[100%]   p-4 ` }>
+                                                <div className="w-full bg-gray-200 rounded-full h-2.5 ">
+                                                    <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: `${res.languageProgress}% `, transition: 'width 0.5s ease' }}></div>
+                                                </div>
+                                                    
+                                                </div>  
+                                            </div>   
+                                        ))                                  
+                                    }                                                                     
                                     </div>
                                 </div>
+                                </div>
+                                
                             </div>
                             
                         </div>
