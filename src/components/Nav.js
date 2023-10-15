@@ -2,7 +2,7 @@ import React from "react"
 export default function Nav (){
     return (
         <>
-            <div className="bg-[#ffffff] shadow-2xl p-4 ">
+            <div className="bg-[#ffffff] shadow-2xl py-6 ">
                 <div className=" flex justify-between items-center container">
                     <div>
                         <span className="text-black font-extrabold">SalahEddine.Dev</span>
