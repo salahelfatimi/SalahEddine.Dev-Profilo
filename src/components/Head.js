@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import TechStack from './Tech-Stack'
 
-async function   Head(){
+ function  Head(){
     return (
         <>
             <div>
@@ -18,11 +18,11 @@ async function   Head(){
                                         <span className="text-[#89797F]">   Hello, I&apos;m Salaheddine Elfatimi, an enthusiastic Full Stack Developer based in Marrakech, Morocco. 📍</span>
                                     </div>
                                     <div>
-                                        <button className="bg-[#148BFB] hover:bg-[#148bfbd2] shadow-2xl   rounded-3xl p-2 px-4 transition duration-700 ease-in-out font-bold ">Download CV</button>
+                                        <button className="bg-[#148BFB] hover:bg-[#148bfbd2] shadow-2xl   rounded-3xl p-2 px-4 transition duration-700 ease-in-out font-bold "><a href="/SALAHEDDINE_ELFATIMI.pdf" download="cv">Download CV</a></button>
                                     </div>
                             </div>
                             <div>
-                                <Image className=" shadow-2xl  rounded-full" src="/profil.png" width={300} height={300} alt="Picture of the author" />
+                                <Image className=" shadow-2xl  rounded-full" src="/profil.png" width={300} height={300} alt="profile" />
 
                             </div>
                         </div>
