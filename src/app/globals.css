@@ -1,7 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Keyframes for the circular movement */
+@keyframes rotate {
+  0% { transform: translateX(0) translateY(0) rotate(0deg); }
+  100% { transform: translateX(0) translateY(0) rotate(360deg); }
+}
 
+.circle-animation {
+  animation: rotate 4s infinite linear; /* Adjust animation duration and easing as needed */
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
