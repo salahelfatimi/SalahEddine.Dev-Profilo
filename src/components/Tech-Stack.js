@@ -16,7 +16,7 @@ export default function TechStack(){
                                 <span className={`font-extrabold text-3xl text-black border-b-4 border-black ${BlackOpsOne.className}`}>Tech Stack</span>
                             </div>
                             <div className="  grid grid-cols-1 lg:grid-cols-2  gap-8 ">                         
-                                <div className=" space-y-6  text-center bg-white p-6 shadow-2xl rounded-xl">
+                                <div className=" space-y-6  text-center bg-white p-6 shadow-inner rounded-xl">
                                     <span className={`text-black font-bold  text-2xl ${BlackOpsOne.className}`}>Front-End </span>
                                     <div className=" grid grid-cols-1 lg:grid-cols-1 gap-4">
                                     {
@@ -34,7 +34,7 @@ export default function TechStack(){
                                     </div>
                                 </div>
                                 <div className="space-y-12">
-                                    <div className='space-y-6 bg-white p-6 shadow-2xl rounded-xl   text-center'>
+                                    <div className='space-y-6 bg-white p-6 shadow-inner rounded-xl   text-center'>
                                         <span className={`text-black font-bold  text-2xl ${BlackOpsOne.className}`}>Back-End </span>
                                         <div className=" grid grid-cols-1 lg:grid-cols-1 gap-4">
                                         {
@@ -52,7 +52,7 @@ export default function TechStack(){
                                         }                                                                 
                                         </div>
                                     </div>
-                                    <div className="space-y-6 text-center bg-white p-6 shadow-2xl rounded-xl">
+                                    <div className="space-y-6 text-center bg-white p-6 shadow-inner rounded-xl">
                                         <span className={`text-black font-bold  text-2xl ${BlackOpsOne.className}`}>Designe</span>
                                         <div className=" grid grid-cols-1 lg:grid-cols-1 gap-4">
                                         {

@@ -8,7 +8,7 @@
 }
 
 .circle-animation {
-  animation: rotate 4s infinite linear; /* Adjust animation duration and easing as needed */
+  animation: rotate 14s infinite linear; /* Adjust animation duration and easing as needed */
 }
 :root {
   --foreground-rgb: 0, 0, 0;
