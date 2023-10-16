@@ -5,7 +5,7 @@ import TechStack from './Tech-Stack'
  function  Head(){
     return (
         <>
-            <div>
+            <div id="home">
                 <div className="bg-[#F9F9F9] py-24">
                                        
                     <div className="container space-y-8">

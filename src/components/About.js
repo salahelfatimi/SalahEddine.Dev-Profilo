@@ -12,7 +12,7 @@ const PaytoneOne = Paytone_One({
 export default function About(){
     return (
         <>
-            <div className='bg-[#ffffff] py-12'>
+            <div id="about"  className='bg-[#ffffff] py-12'>
                 <div className=" container grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-center">
                 <div className="flex justify-center">
                     <div className=' relative'>
