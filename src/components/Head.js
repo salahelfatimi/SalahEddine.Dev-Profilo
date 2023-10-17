@@ -30,6 +30,7 @@ import TechStack from './Tech-Stack'
                     </div>
                 </div>
             </div>
+            
         </>
     )
 }
