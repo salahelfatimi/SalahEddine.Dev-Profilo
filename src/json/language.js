@@ -14,7 +14,7 @@ export const FrontEnd =
     "id":3,
     "languageName":"Tailwind Css",
     "languageImage":"/tailwindcss.jpg",
-    "languageProgress":60
+    "languageProgress":90
 },{
     "id":4,
     "languageName":"Next.js",
