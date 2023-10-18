@@ -7,15 +7,15 @@ export default function Project(){
                 <div className="container grid grid-flow-row grid-cols-1 gap-6  ">
                 { 
                     project.map((ele,index)=>(
-                        <div key={index} className=" flex p-4 flex-col md:flex-row md:items-center  py-8 gap-6 bg-white shadow-2xl rounded-xl">
-                            <div className="md:w-1/2">
-                                <Image className="object-cover w-full h-52 md:h-auto" src={ele.image} width={400} height={400} alt={ele.title} />
+                        <div key={index} className=" flex p-4 flex-col lg:flex-row lg:items-center  py-8 gap-6 bg-white shadow-2xl rounded-xl">
+                            <div className="lg:w-1/2">
+                                <Image className="object-cover w-full h-52 lg:h-auto" src={ele.image} width={400} height={400} alt={ele.title} />
                             </div>
-                            <div className="md:w-1/2 flex flex-col gap-4">
+                            <div className="lg:w-1/2 flex flex-col gap-4">
                                 <span className="text-black text-xl font-bold mb-1">{ele.title} <span className="text-[#8B8B8B] mb-2">({ele.date})</span></span>
                                 
                                 <span className="text-[#8B8B8B] mb-4">{ele.description}</span>
-                                <span className="text-black grid grid-cols-1 md:grid-cols-2  gap-2 items-center ">
+                                <span className="text-black grid grid-cols-1 lg:grid-cols-2  gap-2 items-center ">
                                 {ele.lungageBuild.map((lang, index) => (
                                     <span key={index} className="mr-2 bg-[#148bfbff] text-white px-3 py-1 rounded-md text-center">{lang}</span>
                                 ))}
