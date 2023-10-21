@@ -9,9 +9,9 @@ export default function Project(){
                     project.map((ele,index)=>(
                         <div key={index} className=" flex p-4 flex-col lg:flex-row lg:items-center  py-8 gap-6 bg-white shadow-2xl rounded-xl">
                             <div className="lg:w-1/2">
-                                <Image className="object-cover w-full h-52 lg:h-auto" src={ele.image} width={400} height={400} alt={ele.title} />
+                                <Image className="object-cover w-full h-auto lg:h-auto" src={ele.image} width={400} height={400} alt={ele.title} />
                             </div>
-                            <div className="lg:w-1/2 flex flex-col gap-4">
+                            <div className="lg:w-1/2 flex flex-col lg:text-left text-center  gap-4">
                                 <span className="text-black text-xl font-bold mb-1">{ele.title} <span className="text-[#8B8B8B] mb-2">({ele.date})</span></span>
                                 
                                 <span className="text-[#8B8B8B] mb-4">{ele.description}</span>
