@@ -12,7 +12,7 @@ export default function Project(){
                                 <Image className="object-cover w-full h-auto lg:h-auto" src={ele.image} width={400} height={400} alt={ele.title} />
                             </div>
                             <div className="lg:w-1/2 flex flex-col lg:text-left text-center  gap-4">
-                                <span className="text-black text-xl font-bold mb-1">{ele.title} <span className="text-[#8B8B8B] mb-2">({ele.date})</span></span>
+                                <span className="text-black text-xl font-bold mb-1 flex lg:flex-row gap-2 flex-col uppercase">{ele.title}  <span className="text-[#8B8B8B] mb-2">({ele.date})</span></span>
                                 
                                 <span className="text-[#8B8B8B] mb-4">{ele.description}</span>
                                 <span className="text-black grid grid-cols-1 lg:grid-cols-2  gap-2 items-center ">
