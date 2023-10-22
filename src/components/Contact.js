@@ -28,7 +28,7 @@ export default function Contact(){
                     <div className="space-y-3">
                         <div className="pb-4  flex-col flex gap-1 items-center">
                             <span className={`text-[#148BFB] font-bold  text-3xl ${PaytoneOne.className}`}>CONTACT WITH ME</span>
-                            <span className={` font-bold text-xl text-black `} >Don't be shy! Hit me up! 👇</span>
+                            <span className={` font-bold text-xl text-black `} >Don&apos;t be shy! Hit me up! 👇</span>
 
                         </div>
                         <div className="flex justify-between gap-4">
