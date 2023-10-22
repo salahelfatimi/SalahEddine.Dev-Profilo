@@ -29,7 +29,7 @@ export default function About(){
                     </div>
                     <div className=' text-black flex flex-col gap-4'>
                         <div className='flex flex-col gap-4 text-center lg:text-start'>
-                            <span className={`text-[#148BFB] font-extrabold text-2xl ${PaytoneOne.className}`}>ABOUT ME</span>
+                            <span className={`text-[#148BFB] font-bold text-3xl ${PaytoneOne.className}`}>ABOUT ME</span>
                             <span className={` font-bold `} >Hello, I&apos;m Salaheddine Elfatimi, a Junior Full Stack Developer residing in Marrakech, Morocco. 📍</span>
                         </div>
                         

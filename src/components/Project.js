@@ -1,10 +1,16 @@
 import { project } from "@/json/Project";
 import Image from "next/image"
+import { Paytone_One } from 'next/font/google'
+const PaytoneOne = Paytone_One({
+    weight: '400',
+    subsets: ['latin'],
+  })
 export default function Project(){
     return(
         <>
             <div id="project" className="bg-[#f9f9f9] py-12">
                 <div className="container grid grid-flow-row grid-cols-1 gap-6  ">
+                <span className={`text-[#148BFB] font-bold text-3xl text-center ${PaytoneOne.className}`}>PROJECT</span>
                 { 
                     project.map((ele,index)=>(
                         <div key={index} className=" flex p-4 flex-col lg:flex-row lg:items-center  py-8 gap-6 bg-white shadow-2xl rounded-xl">

@@ -30,7 +30,7 @@ export default function Nav (){
                         <button onClick={() => scrollToSection('home')}  className=" hover:text-[#148BFB] transition  duration-700">Home</button>
                         <button onClick={() => scrollToSection('about')}  className=" hover:text-[#148BFB] transition  duration-700">About</button>
                         <button onClick={() => {scrollToSection('project')} }  className=" hover:text-[#148BFB] transition  duration-700">Projects</button>
-                        <button href="#" className=" hover:text-[#148BFB] transition  duration-700">Contact</button>
+                        <button onClick={() => {scrollToSection('contact')} }  className=" hover:text-[#148BFB] transition  duration-700">Contact</button>
                     </div>
                     </div>
                     <div className="block lg:hidden">
@@ -54,7 +54,7 @@ export default function Nav (){
                         <button onClick={() =>{scrollToSection('home'), setOpen(!open) } }  className=" hover:text-[#148BFB] transition  duration-700">Home</button>
                         <button onClick={() => {scrollToSection('about'), setOpen(!open) } }  className=" hover:text-[#148BFB] transition  duration-700">About</button>
                         <button onClick={() => {scrollToSection('project'), setOpen(!open) } }  className=" hover:text-[#148BFB] transition  duration-700">Projects</button>
-                        <button href="#" className=" hover:text-[#148BFB] transition  duration-700">Contact</button>
+                        <button onClick={() => {scrollToSection('contact'), setOpen(!open) } } className=" hover:text-[#148BFB] transition  duration-700">Contact</button>
                     </div>
                 </div>
 
