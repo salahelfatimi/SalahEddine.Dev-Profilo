@@ -21,13 +21,14 @@ export default function Contact(){
     
       return (
         <>
-            <div id='contact' className=' container py-12 bg-white'>
+            <div id='contact' className=' container py-12  bg-white'>
                 <form className="contact-form" onSubmit={sendEmail}>
                     <input type="hidden" name="contact_number" />
                     <div>
                     <div className="space-y-3">
-                        <div className="pb-4 text-center">
-                        <span className={`text-[#148BFB] font-bold  text-3xl ${PaytoneOne.className}`}>CONTACT WITH ME</span>
+                        <div className="pb-4  flex-col flex gap-1 items-center">
+                            <span className={`text-[#148BFB] font-bold  text-3xl ${PaytoneOne.className}`}>CONTACT WITH ME</span>
+                            <span className={` font-bold text-xl text-black `} >Don't be shy! Hit me up! 👇</span>
 
                         </div>
                         <div className="flex justify-between gap-4">
