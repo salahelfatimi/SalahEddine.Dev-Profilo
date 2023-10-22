@@ -20,7 +20,7 @@ export default function Nav (){
       
     return (
         <>
-            <div className="bg-[#ffffff] z-30  fixed top-0 right-0 left-0 shadow-2xl py-4 ">
+            <div className="bg-[#ffffff] z-30  fixed top-0 right-0 left-0 shadow-2xl py-5 ">
                 <div className=" flex justify-between items-center container">
                     <div>
                         <span className={` text-black font-extrabold `}>SalahEddine.Dev</span>

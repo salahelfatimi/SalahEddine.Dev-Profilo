@@ -13,10 +13,13 @@ export default function Home() {
     
       <div className=' '>
           <Nav/>
-          <Head/>
-          <About/>
-          <Project/>
-          <Contact/>
+         
+            <Head/>
+            <About/>
+            <Project/>
+            <Contact/>
+         
+         
           <Footer/>
       </div>
    
