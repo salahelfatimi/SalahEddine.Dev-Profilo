@@ -39,8 +39,8 @@ import { Paytone_One } from 'next/font/google'
         alertDiv.innerHTML = `
           <div class="bg-[#16db65] p-4 lg:w-[30%] lg:h-[40%] rounded-lg gap-4 flex flex-col items-center justify-center">
             <img src="/check.png" width="100" height="100" alt="Nav" />
-            <span class="text-xl font-bold">${message}</span>
-            <span class="text-md font-semibold">Thank you for getting in touch.</span>
+            <span class="text-xl font-bold text-white">${message}</span>
+            <span class="text-md font-semibold text-white ">Thank you for getting in touch.</span>
           </div>
         `;
         document.body.appendChild(alertDiv);
