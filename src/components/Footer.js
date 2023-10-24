@@ -4,7 +4,7 @@ export default function Footer(){
     return(
         <>
             <div className="bg-[#2D2E32] py-20 ">
-                <div className="container flex flex-col gap-4 lg:flex-row   justify-between items-center">
+                <div className="container flex flex-col gap-4 lg:flex-row  text-center  justify-between items-center">
                     
                         <span className="font-bold text-white text-xl">Copyright &copy; {new Date().getFullYear()} . All rights are reserved</span>
 
