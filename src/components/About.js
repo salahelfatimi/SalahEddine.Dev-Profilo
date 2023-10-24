@@ -30,7 +30,7 @@ export default function About(){
                     <div className=' text-black flex flex-col gap-4'>
                         <div className='flex flex-col gap-4 text-center lg:text-start'>
                             <span className={`text-[#148BFB] font-bold text-3xl ${PaytoneOne.className}`}>ABOUT ME</span>
-                            <span className={` font-bold text-justify`} >Hello, I&apos;m Salaheddine Elfatimi, a Junior Full Stack Developer based in the enchanting city of Marrakech, Morocco 🏡.</span>
+                            <span className={` font-bold text-center lg:text-justify`} >Hello, I&apos;m Salaheddine Elfatimi, a Junior Full Stack Developer based in the enchanting city of Marrakech, Morocco 🏡.</span>
                         </div>
                         
                         <span className={` text-[#89797F] text-sm font-bold  text-center lg:text-justify ${VarelaRound.className}`}>My journey in web development has led me to explore both the frontend and backend domains On the frontend, I wield technologies like HTML , CSS , React , Vite , Next.js and JavaScript to craft engaging and user-friendly interfaces. I&apos;m proficient in modern frontend libraries and frameworks such as React, and I have experience with styling tools like Tailwind and Bootstrap to make designs come to life.
