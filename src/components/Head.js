@@ -32,8 +32,10 @@ import TechStack from './Tech-Stack'
                                     <div className='flex flex-col lg:flex-row items-center gap-3 '>
                                         <button className="bg-[#148BFB] text-white hover:bg-[#148bfbd2] shadow-2xl   rounded-3xl p-2 px-4 transition duration-700 ease-in-out font-bold "><a href="/SALAHEDDINE_ELFATIMI.pdf" download="cv">Download CV</a></button>
                                         <button onClick={() => {scrollToSection('contact')} } className="bg-[#ffff] text-black shadow-2xl   rounded-3xl p-2 px-4 transition duration-700 ease-in-out font-bold ">Hire Me</button>
-
+                                        
                                     </div>
+                                    
+                               
                             </div>
                             <div>
                                 <Image className=" shadow-2xl  rounded-full" src="/profile2.png" width={250} height={250} alt="profile" />

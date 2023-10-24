@@ -112,7 +112,7 @@ import { Paytone_One } from 'next/font/google'
                   value={formData.message}
                   onChange={handleInputChange}
                 />
-                <button type="submit" value="Send" className="border px-12 py-1 rounded border-black text-black font-light">SEND</button>
+                <button type="submit" value="Send" className="border px-10 hover:bg-[#148bfbcb] duration-700  capitalize font-bold py-1 rounded bg-[#148BFB] text-white ">send</button>
               </div>
             </div>
           </form>

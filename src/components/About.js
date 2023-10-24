@@ -30,10 +30,16 @@ export default function About(){
                     <div className=' text-black flex flex-col gap-4'>
                         <div className='flex flex-col gap-4 text-center lg:text-start'>
                             <span className={`text-[#148BFB] font-bold text-3xl ${PaytoneOne.className}`}>ABOUT ME</span>
-                            <span className={` font-bold `} >Hello, I&apos;m Salaheddine Elfatimi, a Junior Full Stack Developer residing in Marrakech, Morocco. 📍</span>
+                            <span className={` font-bold text-justify`} >Hello, I&apos;m Salaheddine Elfatimi, a Junior Full Stack Developer based in the enchanting city of Marrakech, Morocco 🏡.</span>
                         </div>
                         
-                        <span className={` text-[#89797F] text-center lg:text-start ${VarelaRound.className}`}>I have a solid foundation in Frontend technologies, including HTML, CSS, React, Vite, JavaScript, Redux, Tailwind, Bootstrap, and Next.js, allowing me to craft engaging and responsive user interfaces. On the backend, I have experience with Php, Sql, Laravel, and MongoDB, enabling me to develop functional and efficient applications. Proficient in design using Figma and Canva, I ensure that the user experience is both aesthetically pleasing and intuitive. Additionally, I am well-versed in utilizing essential software development tools like Git and GitHub to enhance collaboration and version control in projects.</span>
+                        <span className={` text-[#89797F] text-sm font-bold  text-center lg:text-justify ${VarelaRound.className}`}>My journey in web development has led me to explore both the frontend and backend domains On the frontend, I wield technologies like HTML , CSS , React , Vite , Next.js and JavaScript to craft engaging and user-friendly interfaces. I&apos;m proficient in modern frontend libraries and frameworks such as React, and I have experience with styling tools like Tailwind and Bootstrap to make designs come to life.
+
+                            In the backend realm, I&apos;m well-versed in technologies such as PHP , SQL , Laravel , and MongoDB. I enjoy the challenge of building robust server-side applications, and I appreciate the importance of secure and efficient data management.
+
+                            Beyond coding, I bring my creative touch to design, utilizing tools like Figma and Canva to add a visual flair to my projects.
+
+                            With my background and hands-on experience, including my role as a Stagiaire en Développement digital, I&apos;m ready to take on development challenges and work collaboratively on exciting projects. Let&apos;s embark on a journey to create something exceptional together! 🚀</span>
                     </div>
                     
                 </div>
