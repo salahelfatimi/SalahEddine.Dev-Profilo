@@ -18,7 +18,7 @@ import { Paytone_One } from 'next/font/google'
     function sendEmail(e) {
       e.preventDefault();
       
-      emailjs.sendForm('service_fd3grgs', 'template_13xa2hi', e.target, 'hNcZha-7RcR69-lAp')
+      emailjs.sendForm('service_fd3grgs', 'template_j78az8h', e.target, 'hNcZha-7RcR69-lAp')
         .then((result) => {
         
           setFormData({
