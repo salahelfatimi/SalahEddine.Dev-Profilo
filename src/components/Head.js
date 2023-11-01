@@ -38,7 +38,7 @@ import TechStack from './Tech-Stack'
                                
                             </div>
                             <div>
-                                <Image className=" shadow-2xl  rounded-full" src="/profile2.png" width={250} height={250} alt="profile" />
+                                <Image className="   rounded-full" src="/profile3.png" width={200} height={200} alt="profile" />
 
                             </div>
                         </div>
