@@ -1,6 +1,5 @@
-"use client"
-import { Paytone_One } from 'next/font/google'
-  import Image from "next/image"
+  "use client"
+  import { Paytone_One } from 'next/font/google'
   import React, { useState } from 'react';
   import emailjs from 'emailjs-com';
   const PaytoneOne = Paytone_One({
@@ -8,6 +7,7 @@ import { Paytone_One } from 'next/font/google'
     subsets: ['latin'],
   })
   export default function Contact() {
+    const Swal = require('sweetalert2')
     const [formData, setFormData] = useState({
       from_name: '',
       from_email: '',
@@ -27,28 +27,21 @@ import { Paytone_One } from 'next/font/google'
             subject: '',
             message: '',
           });
-          showAlert('Message sent successfully!');
+          Swal.fire(
+            'Good job!',
+            'You send the message!',
+            'success'
+          )
         }, (error) => {
           console.log(error.text);
-        //   showAlert('An error occurred while sending the message. Please try again later.');
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong . Please try again later.!',
+          })
         });
     }
-    function showAlert(message) {
-        const alertDiv = document.createElement('div');
-        alertDiv.className = 'fixed inset-0 flex items-center justify-center bg-opacity-95';
-        alertDiv.innerHTML = `
-          <div class="bg-[#16db65] p-4 lg:w-[30%] lg:h-[40%] rounded-lg gap-4 flex flex-col items-center justify-center">
-            <img src="/check.png" width="100" height="100" alt="Nav" />
-            <span class="text-xl font-bold text-white">${message}</span>
-            <span class="text-md font-semibold text-white ">Thank you for getting in touch.</span>
-          </div>
-        `;
-        document.body.appendChild(alertDiv);
-        setTimeout(() => {
-          document.body.removeChild(alertDiv);
-        }, 5000); 
-      }
-
+    
     const handleInputChange = (e) => {
       const { name, value } = e.target;
       setFormData({
