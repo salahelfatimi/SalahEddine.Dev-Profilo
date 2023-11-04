@@ -38,7 +38,7 @@ import TechStack from './Tech-Stack'
                                
                             </div>
                             <div>
-                                <Image className="  " src="/profile5.jpg" width={300} height={300} alt="profile" />
+                                <Image className="  " src="/profile5.png" width={300} height={300} alt="profile" />
 
                             </div>
                         </div>
