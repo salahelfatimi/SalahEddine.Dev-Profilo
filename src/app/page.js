@@ -14,11 +14,13 @@ export default function Home() {
     
       <div className=' relative'>
           <Nav/>
-         
-            <Head/>
-            <About/>
-            <Project/>
-            <Contact/>
+            
+              <Head/>
+              <About/>
+              <Project/>
+              <Contact/>
+            
+            
          
          
           <Footer/>

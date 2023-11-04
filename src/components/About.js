@@ -16,7 +16,7 @@ export default function About(){
                 <div className=" container grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-center">
                 <div className="flex justify-center">
                     <div className=' relative'>
-                        <Image  className=" rounded-md shadow-2xl  "   src="/AboutImage.jpg" width={400} height={200} alt="About" />
+                        <Image  className=" rounded-md  "   src="/head.jpg" width={400} height={200} alt="About" />
                         <div className=' hidden lg:block  absolute -bottom-8 -right-8  '>
                             <Image  className=" circle-animation shadow-2xl rounded-full  bottom-0 left-0"   src="/CerclaImage.png" width={150} height={150} alt="About" />
                             <div className=' absolute top-[3.1rem] right-[3.2rem]'>
@@ -27,13 +27,13 @@ export default function About(){
                     </div>
 
                     </div>
-                    <div className=' text-black flex flex-col gap-4'>
+                    <div className=' text-black flex flex-col gap-4 font-mono'>
                         <div className='flex flex-col gap-4 text-center lg:text-start'>
-                            <span className={`text-[#148BFB] font-bold text-3xl ${PaytoneOne.className}`}>ABOUT ME</span>
-                            <span className={` font-bold text-center lg:text-justify`} >Hello, I&apos;m Salaheddine Elfatimi, a Junior Full Stack Developer based in the enchanting city of Marrakech, Morocco 🏡.</span>
+                            <span className={`text-[#148BFB] font-bold text-3xl font-mono capitalize`}>About Me</span>
+                            <span className={` font-bold text-lg text-center lg:text-justify`} >Hello, I&apos;m Salaheddine Elfatimi, a Junior Full Stack Developer based in the enchanting city of Marrakech, Morocco 🏡.</span>
                         </div>
                         
-                        <span className={` text-[#89797F] text-sm font-bold  text-center lg:text-justify ${VarelaRound.className}`}>My journey in web development has led me to explore both the frontend and backend domains On the frontend, I wield technologies like HTML , CSS , React , Vite , Next.js and JavaScript to craft engaging and user-friendly interfaces. I&apos;m proficient in modern frontend libraries and frameworks such as React, and I have experience with styling tools like Tailwind and Bootstrap to make designs come to life.
+                        <span className={` text-[#89797F] text-sm font-semibold  text-center lg:text-justify `}>My journey in web development has led me to explore both the frontend and backend domains On the frontend, I wield technologies like HTML , CSS , React , Vite , Next.js and JavaScript to craft engaging and user-friendly interfaces. I&apos;m proficient in modern frontend libraries and frameworks such as React, and I have experience with styling tools like Tailwind and Bootstrap to make designs come to life.
 
                             In the backend realm, I&apos;m well-versed in technologies such as PHP , SQL , Laravel , and MongoDB. I enjoy the challenge of building robust server-side applications, and I appreciate the importance of secure and efficient data management.
 

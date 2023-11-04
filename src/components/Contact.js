@@ -59,9 +59,9 @@
             <input type="hidden" name="contact_number" />
             <div>
               <div className="space-y-3">
-                <div className="pb-4 flex-col flex gap-1 items-center">
-                  <span className={`text-[#148BFB] font-bold text-3xl ${PaytoneOne.className}`}>CONTACT WITH ME</span>
-                  <span className={`font-bold text-xl text-black`}>Don&apos;t be shy! Hit me up! 👇</span>
+                <div className="pb-4 flex-col flex gap-2 items-center">
+                  <span className={`text-[#148BFB] font-bold font-mono text-4xl `}>Get In Touch</span>
+                  <span className={` font-mono font-semibold  text-black flex flex-col items-center text-center`}>Interested in working together? We should queue up a chat.<span> I&apos;ll buy the coffee.👇</span></span>
                 </div>
                 <div className="flex justify-between gap-4">
                   <input

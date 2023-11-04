@@ -21,7 +21,7 @@ export default function Nav (){
     return (
         <>
             <div className="bg-[#ffffff] z-30  fixed top-0 right-0 left-0 shadow-2xl py-5 ">
-                <div className=" flex justify-between items-center container">
+                <div className=" flex justify-between items-center px-12">
                     <div>
                         <span className={` text-black font-extrabold `}>SalahEddine.Dev</span>
                     </div>
@@ -29,7 +29,7 @@ export default function Nav (){
                     <div className="text-[#89797F]  flex gap-8 font-semibold ">
                         <button onClick={() => scrollToSection('home')}  className=" hover:text-[#148BFB] transition  duration-700">Home</button>
                         <button onClick={() => scrollToSection('about')}  className=" hover:text-[#148BFB] transition  duration-700">About</button>
-                        <button onClick={() => {scrollToSection('project')} }  className=" hover:text-[#148BFB] transition  duration-700">Projects</button>
+                        <button onClick={() => {scrollToSection('project')} }  className=" hover:text-[#148BFB] transition  duration-700">Portfolio</button>
                         <button onClick={() => {scrollToSection('contact')} }  className=" hover:text-[#148BFB] transition  duration-700">Contact</button>
                     </div>
                     </div>
@@ -53,7 +53,7 @@ export default function Nav (){
                         
                         <button onClick={() =>{scrollToSection('home'), setOpen(!open) } }  className=" hover:text-[#148BFB] transition  duration-700">Home</button>
                         <button onClick={() => {scrollToSection('about'), setOpen(!open) } }  className=" hover:text-[#148BFB] transition  duration-700">About</button>
-                        <button onClick={() => {scrollToSection('project'), setOpen(!open) } }  className=" hover:text-[#148BFB] transition  duration-700">Projects</button>
+                        <button onClick={() => {scrollToSection('project'), setOpen(!open) } }  className=" hover:text-[#148BFB] transition  duration-700">Portfolio</button>
                         <button onClick={() => {scrollToSection('contact'), setOpen(!open) } } className=" hover:text-[#148BFB] transition  duration-700">Contact</button>
                     </div>
                 </div>
