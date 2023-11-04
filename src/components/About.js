@@ -16,7 +16,7 @@ export default function About(){
                 <div className=" container grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-center">
                 <div className="flex justify-center">
                     <div className=' relative'>
-                        <Image  className=" rounded-md  "   src="/head.jpg" width={400} height={200} alt="About" />
+                        <Image  className=" rounded-md  "   src="/profileHead.png" width={400} height={200} alt="About" />
                         <div className=' hidden lg:block  absolute -bottom-8 -right-8  '>
                             <Image  className=" circle-animation shadow-2xl rounded-full  bottom-0 left-0"   src="/CerclaImage.png" width={150} height={150} alt="About" />
                             <div className=' absolute top-[3.1rem] right-[3.2rem]'>
