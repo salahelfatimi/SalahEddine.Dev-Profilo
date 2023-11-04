@@ -30,8 +30,8 @@ import TechStack from './Tech-Stack'
                                         <span className=" text-[#86888c] font-mono">   Hello, I&apos;m Salaheddine Elfatimi, an enthusiastic  Full Stack Developer based in Marrakech, Morocco. 📍</span>
                                     </div>
                                     <div className='flex flex-col lg:flex-row items-center gap-3 font-mono '>
-                                        <button className="bg-[#148BFB] text-white hover:bg-[#148bfbd2] shadow-2xl  rounded-3xl p-2 px-4 transition duration-700 ease-in-out font-bold "><a href="/SALAHEDDINE_ELFATIMI.pdf" target="_blank">Download CV</a></button>
-                                        <button onClick={() => {scrollToSection('contact')} } className="bg-[#ffff] text-black shadow-2xl   rounded-3xl p-2 px-4 transition duration-700 ease-in-out font-bold ">Hire Me</button>
+                                        <button className="bg-[#148BFB] text-white hover:bg-[#148bfbd2] shadow-2xl  rounded-3xl p-2 px-4 transition duration-700 ease-in-out font-bold "><a href="/SALAHEDDINE_ELFATIMI.pdf" target="_blank">RESUME</a></button>
+                                        <button onClick={() => {scrollToSection('contact')} } className="bg-[#ffff] text-black shadow-2xl   rounded-3xl p-2 px-4 transition duration-700 ease-in-out font-bold ">SAY HELLO</button>
                                         
                                     </div>
                                     
