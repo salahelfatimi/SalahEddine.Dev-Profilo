@@ -1,11 +1,16 @@
 import { project } from "@/json/Project";
+import { Black_Ops_One} from 'next/font/google'
 
+const BlackOpsOne = Black_Ops_One({
+    weight: '400',
+    subsets: ['latin'],
+})
 export default function Project(){
     return(
         <>
             <div id="project" className="bg-[#f9f9f9] dark:bg-[#121212] py-12">
                 <div className="container grid grid-flow-row grid-cols-1 gap-6  ">
-                <span className={`text-[#148BFB] dark:text-[#bb86fc] font-bold font-mono text-4xl text-start`}>Some Things I&apos;ve Built</span>
+                <span className={`text-[#148BFB] dark:text-[#bb86fc] font-bold font-mono text-4xl text-start ${BlackOpsOne.className}`}>Some Things I&apos;ve Built</span>
                 <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-3">
                 { 
                     project.map((ele,index)=>(

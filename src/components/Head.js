@@ -1,7 +1,12 @@
 "use client"
 import Image from 'next/image'
 import TechStack from './Tech-Stack'
+import { Black_Ops_One} from 'next/font/google'
 
+const BlackOpsOne = Black_Ops_One({
+    weight: '400',
+    subsets: ['latin'],
+})
  function  Head(){
 
     function scrollToSection(sectionId) {
@@ -24,7 +29,7 @@ import TechStack from './Tech-Stack'
                         <div className=" flex flex-col-reverse gap-8 justify-center lg:flex-row lg:justify-between items-center">
                             <div className="  space-y-4 text-center lg:text-start  ">
                                     <div className=" flex items-center justify-center lg:justify-start ">
-                                        <span className="text-[#2d2e32] dark:text-white font-bold text-2xl lg:text-5xl ">Full Stack Developer  </span>
+                                        <span className={`text-[#2d2e32] dark:text-white font-bold text-2xl lg:text-5xl  ${BlackOpsOne.className}`}  >Full Stack Developer  </span>
                                     </div>
                                     <div>
                                         <span className=" text-[#86888c] dark:text-[##7a7a7a]  font-mono">   Hello, I&apos;m Salaheddine Elfatimi, an enthusiastic  Full Stack Developer based in Marrakech, Morocco. 📍</span>

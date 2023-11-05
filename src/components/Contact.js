@@ -1,5 +1,11 @@
   "use client"
   import React, { useState } from 'react';
+  import { Black_Ops_One} from 'next/font/google'
+
+  const BlackOpsOne = Black_Ops_One({
+      weight: '400',
+      subsets: ['latin'],
+  })
   import emailjs from 'emailjs-com';
   export default function Contact() {
     const Swal = require('sweetalert2')
@@ -60,7 +66,7 @@
             <div>
               <div className="space-y-3">
                 <div className="pb-4 flex-col flex gap-2 items-center">
-                  <span className={`text-[#148BFB] dark:text-[#bb86fc] font-bold font-mono text-4xl `}>Get In Touch</span>
+                  <span className={`text-[#148BFB] dark:text-[#bb86fc] font-bold font-mono text-4xl ${BlackOpsOne.className}`}>Get In Touch</span>
                   <span className={` font-mono font-semibold  dark:text-white text-black flex flex-col items-center text-center`}>Interested in working together? We should queue up a chat.<span> I&apos;ll buy the coffee.👇</span></span>
                 </div>
                 <div className="flex justify-between gap-4">

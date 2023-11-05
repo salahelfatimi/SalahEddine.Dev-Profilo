@@ -13,12 +13,12 @@ export default function TechStack(){
         <>
         <div className="space-y-12">
                             <div className="text-center font-mono">
-                                <span className={`font-extrabold text-3xl text-black border-b-4 dark:text-white dark:border-white border-black ${BlackOpsOne.className}`}>Tech Stack</span>
+                                <span className={`font-extrabold text-3xl  text-black border-b-4 dark:text-[#bb86fc]  dark:border-[#bb86fc] border-black ${BlackOpsOne.className}`}>Tech Stack</span>
                             </div>
                             <div className="  flex flex-col gap-4   ">   
                                                   
                                 <div className="flex lg:flex-row flex-col items-center  dark:bg-[#2d2e32] bg-white shadow-inner  text-center  p-6 gap-12 rounded-xl">
-                                    <span className={`text-black font-bold dark:text-white  text-2xl ${BlackOpsOne.className}`}>Front-End </span>
+                                    <span className={`text-black font-bold dark:text-white   text-2xl ${BlackOpsOne.className}`}>Front-End </span>
                                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex items-center justify-center   gap-8">
                                     {
                                         FrontEnd.map((res,index)=>(

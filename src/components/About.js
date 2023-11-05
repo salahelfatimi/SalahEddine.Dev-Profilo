@@ -1,5 +1,11 @@
 "use client"
 import Image from 'next/image'
+import { Black_Ops_One} from 'next/font/google'
+
+const BlackOpsOne = Black_Ops_One({
+    weight: '400',
+    subsets: ['latin'],
+})
 export default function About(){
     return (
         <>
@@ -24,7 +30,7 @@ export default function About(){
                     </div>
                     <div className=' text-black flex flex-col gap-4 font-mono'>
                         <div className='flex flex-col gap-4 text-center lg:text-start'>
-                            <span className={`text-[#148BFB] dark:text-[#bb86fc] font-bold text-3xl font-mono capitalize`}>About Me</span>
+                            <span className={`text-[#148BFB] dark:text-[#bb86fc] font-bold text-3xl font-mono capitalize ${BlackOpsOne.className}`}>About Me</span>
                             <span className={` font-bold text-lg text-center lg:text-justify dark:text-[#fff]`} >Hello, I&apos;m Salaheddine Elfatimi, a Junior Full Stack Developer based in the enchanting city of Marrakech, Morocco 🏡.</span>
                         </div>
                         
