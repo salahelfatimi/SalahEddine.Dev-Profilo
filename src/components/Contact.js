@@ -15,13 +15,13 @@ export default function Contact() {
   });
 const sendEmail =async (e)=>{
   e.preventDefault();
-  const response = await fetch('/api/send',{
-    method:"POST",
-    headers:{
-      'content-Type':'application/json',
+  const response = await fetch("/api/send", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
     },
-    body: JSON.stringify(formData)
-  })
+    body: JSON.stringify(formData),
+  });
   if(response.status===200){
     setFormData({
       name: '',
@@ -63,7 +63,7 @@ const sendEmail =async (e)=>{
         <div id='contact' className='   py-12 container'>
             
           <form className="contact-form" onSubmit={sendEmail}>
-            <input type="hidden" name="contact_number" />
+          
             <div>
               <div className="space-y-3">
                 <div className="pb-4 flex-col flex gap-2 items-center">
@@ -112,7 +112,7 @@ const sendEmail =async (e)=>{
                   value={formData.message}
                   onChange={handleInputChange}
                 />
-                <button type="submit" value="Send" className=" bg-[#148BFB] hover:bg-[#f9f9f9] hover:text-black border-2 hover:border-[#148BFB] dark:bg-[#bb86fc] dark:hover:text-[#fff] dark:text-black dark:border-[#bb86fc] dark:border-2 dark:hover:bg-[#121212]  text-white hover:bg-[#148bfbd2]  border-[#ffffff]  rounded py-1 px-8 transition duration-700  font-bold ">send</button>
+                <button  value="Send" className=" bg-[#148BFB] hover:bg-[#f9f9f9] hover:text-black border-2 hover:border-[#148BFB] dark:bg-[#bb86fc] dark:hover:text-[#fff] dark:text-black dark:border-[#bb86fc] dark:border-2 dark:hover:bg-[#121212]  text-white hover:bg-[#148bfbd2]  border-[#ffffff]  rounded py-1 px-8 transition duration-700  font-bold ">send</button>
               </div>
             </div>
           </form>
