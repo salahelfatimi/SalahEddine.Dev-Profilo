@@ -13,7 +13,7 @@ export default function TechStack(){
         <>
         <div className="space-y-12">
                             <div className="text-center font-mono">
-                                <span className={`font-extrabold text-3xl  text-black border-b-4 dark:text-[#bb86fc]  dark:border-[#bb86fc] border-black ${BlackOpsOne.className}`}>Tech Stack</span>
+                                <span className={`font-extrabold text-3xl  text-[#148BFB]  border-b-4 dark:text-[#bb86fc]  dark:border-[#bb86fc] border-[#148BFB] ${BlackOpsOne.className}`}>Tech Stack</span>
                             </div>
                             <div className="  flex flex-col gap-4   ">   
                                                   
