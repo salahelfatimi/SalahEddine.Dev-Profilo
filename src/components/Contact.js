@@ -105,7 +105,7 @@
                   value={formData.message}
                   onChange={handleInputChange}
                 />
-                <button type="submit" value="Send" className=" bg-[#148BFB] hover:bg-[#f9f9f9] hover:text-black border-2 hover:border-[#148BFB] dark:bg-[#bb86fc] dark:hover:text-[#fff] dark:text-black dark:border-[#bb86fc] dark:border-2 dark:hover:bg-[#121212]  text-white hover:bg-[#148bfbd2]   rounded py-1 px-8 transition duration-700  font-bold ">send</button>
+                <button type="submit" value="Send" className=" bg-[#148BFB] hover:bg-[#f9f9f9] hover:text-black border-2 hover:border-[#148BFB] dark:bg-[#bb86fc] dark:hover:text-[#fff] dark:text-black dark:border-[#bb86fc] dark:border-2 dark:hover:bg-[#121212]  text-white hover:bg-[#148bfbd2]  border-[#ffffff]  rounded py-1 px-8 transition duration-700  font-bold ">send</button>
               </div>
             </div>
           </form>
