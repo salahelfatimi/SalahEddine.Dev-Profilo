@@ -1,10 +1,5 @@
 import { project } from "@/json/Project";
-import Image from "next/image"
-import { Paytone_One } from 'next/font/google'
-const PaytoneOne = Paytone_One({
-    weight: '400',
-    subsets: ['latin'],
-  })
+
 export default function Project(){
     return(
         <>

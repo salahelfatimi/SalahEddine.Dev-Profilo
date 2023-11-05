@@ -1,11 +1,6 @@
   "use client"
-  import { Paytone_One } from 'next/font/google'
   import React, { useState } from 'react';
   import emailjs from 'emailjs-com';
-  const PaytoneOne = Paytone_One({
-    weight: '400',
-    subsets: ['latin'],
-  })
   export default function Contact() {
     const Swal = require('sweetalert2')
     const [formData, setFormData] = useState({

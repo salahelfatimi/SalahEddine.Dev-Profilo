@@ -1,14 +1,5 @@
 "use client"
 import Image from 'next/image'
-import { Black_Ops_One, Paytone_One, Varela_Round } from 'next/font/google'
-const PaytoneOne = Paytone_One({
-    weight: '400',
-    subsets: ['latin'],
-  })
-  const VarelaRound=Varela_Round({
-    weight: '400',
-    subsets: ['latin'],
-  })
 export default function About(){
     return (
         <>

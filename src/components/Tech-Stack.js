@@ -1,11 +1,7 @@
 "use client"
 import { FrontEnd,BackEnd,Designe } from '@/json/language'
-import { Black_Ops_One, Paytone_One } from 'next/font/google'
 import Image from 'next/image'
-const BlackOpsOne = Black_Ops_One({
-    weight: '400',
-    subsets: ['latin'],
-})
+
 
 
 export default function TechStack(){
