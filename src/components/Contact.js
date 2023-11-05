@@ -1,62 +1,63 @@
-  "use client"
-  import React, { useState } from 'react';
-  import { Black_Ops_One} from 'next/font/google'
-
-  const BlackOpsOne = Black_Ops_One({
-      weight: '400',
-      subsets: ['latin'],
+"use client"
+import React, { useState } from 'react';
+import Swal from 'sweetalert2';
+import { Black_Ops_One} from 'next/font/google'
+const BlackOpsOne = Black_Ops_One({
+    weight: '400',
+    subsets: ['latin'],
+})
+export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+const sendEmail =async (e)=>{
+  e.preventDefault();
+  const response = await fetch('/api/send',{
+    method:"POST",
+    headers:{
+      'content-Type':'application/json',
+    },
+    body: JSON.stringify(formData)
   })
-  import emailjs from 'emailjs-com';
-  export default function Contact() {
-    const Swal = require('sweetalert2')
-    const [formData, setFormData] = useState({
-      from_name: '',
-      from_email: '',
+  if(response.status===200){
+    setFormData({
+      name: '',
+      email: '',
       subject: '',
       message: '',
+    })
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'The message has been sent successfully',
+      showConfirmButton: false,
+      timer: 6000,
+    })
+  }
+  else{
+    Swal.fire({
+      position: 'center',
+      icon: 'error',
+      title: 'Something went wrong. Please try again later!',
+      showConfirmButton: false,
+      timer: 6000,
+    })
+  }
+}
+  
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
     });
-  
-    function sendEmail(e) {
-      e.preventDefault();
-      
-      emailjs.sendForm('service_fd3grgs', 'template_j78az8h', e.target, 'hNcZha-7RcR69-lAp')
-        .then((result) => {
-        
-          setFormData({
-            from_name: '',
-            from_email: '',
-            subject: '',
-            message: '',
-          });
-          Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'The message has been sent successfully',
-            showConfirmButton: false,
-            timer: 6000
-          })
-        }, (error) => {
-          console.log(error.text);
-          Swal.fire({
-            position: 'center',
-            icon: 'error',
-            title: 'Something went wrong . Please try again later.!',
-            showConfirmButton: false,
-            timer: 6000,
-         
-          })
-        });
-    }
-    
-    const handleInputChange = (e) => {
-      const { name, value } = e.target;
-      setFormData({
-        ...formData,
-        [name]: value,
-      });
-    };
-  
-    return (
+  };
+
+  return (
       <>
       <div className=' bg-[#ffffff] dark:bg-[#121212]'>
         <div id='contact' className='   py-12 container'>
@@ -73,21 +74,21 @@
                   <input
                     required
                     type="text"
-                    name="from_name"
+                    name="name"
                     id="Name"
                     className="bg-[#ffffff] text-black border-[#148afa]  dark:text-white h-8 w-1/2 border-2 p-4 font-mono text-xs  dark:bg-[#3c4042] dark:border-[#bb86fc]  "
                     placeholder="Name"
-                    value={formData.from_name}
+                    value={formData.name}
                     onChange={handleInputChange}
                   />
                   <input
                     required
                     type="email"
-                    name="from_email"
+                    name="email"
                     id="Email"
                     className="bg-[#ffffff] text-black border-[#148afa]  dark:text-white w-1/2 h-8  p-4 font-mono text-xs  dark:bg-[#3c4042] dark:border-[#bb86fc] border-2 "
                     placeholder="Email"
-                    value={formData.from_email}
+                    value={formData.email}
                     onChange={handleInputChange}
                   />
                 </div>
