@@ -6,7 +6,13 @@ import { useTheme } from "next-themes";
 export default function Nav (){
     const[open,setOpen]=useState(false)
     const { theme, setTheme } = useTheme();
-
+    const [mounted, setMointed] = useState(false);
+    useEffect(() => {
+        setMointed(true);
+      }, []);
+      if (!mounted) {
+        return null;
+      }
     function scrollToSection(sectionId) {
 
       
