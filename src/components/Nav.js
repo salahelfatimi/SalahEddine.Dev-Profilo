@@ -33,7 +33,7 @@ export default function Nav (){
                 <div className=" hidden lg:block">
                 <div className=" flex justify-between items-center px-12">
                     <div>
-                        <span className={` text-black dark:text-[#bb86fc]  font-extrabold `}>SalahEddine.Dev</span>
+                        <span className={` text-black dark:text-[#fff]  font-extrabold `}>SalahEddine.Dev</span>
                     </div>
                     
                     <div className="text-[#89797F] dark:text-white  flex gap-8 font-semibold ">
@@ -65,9 +65,11 @@ export default function Nav (){
                 </div>
                     <div className="block lg:hidden">
                         <div className="flex items-center justify-between px-8">
-                            <span className={` text-black dark:text-[#bb86fc] font-extrabold `}>SalahEddine.Dev</span>
-                            <button className={``} onClick={()=>{setOpen(!open)}}>
-                                <svg fill="#bb86fc" width="28px" height="28px" viewBox="0 -2 28 28" xmlns="http://www.w3.org/2000/svg"><path d="m2.61 0h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 9.39h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 18.781h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/></svg>
+                            <span className={` text-black dark:text-[#fff] font-extrabold `}>SalahEddine.Dev</span>
+                            <button  onClick={()=>{setOpen(!open)}}>
+                                <svg className="dark:hidden block" fill="" width="28px" height="28px" viewBox="0 -2 28 28" xmlns="http://www.w3.org/2000/svg"><path d="m2.61 0h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 9.39h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 18.781h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/></svg>
+                                <svg className="dark:block hidden" fill="#bb86fc" width="28px" height="28px" viewBox="0 -2 28 28" xmlns="http://www.w3.org/2000/svg"><path d="m2.61 0h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 9.39h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 18.781h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/></svg>
+
                             </button>
                        
                         </div>
