@@ -27,17 +27,22 @@
             subject: '',
             message: '',
           });
-          Swal.fire(
-            'Good job!',
-            'You send the message!',
-            'success'
-          )
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'The message has been sent successfully',
+            showConfirmButton: false,
+            timer: 6000
+          })
         }, (error) => {
           console.log(error.text);
           Swal.fire({
+            position: 'center',
             icon: 'error',
-            title: 'Oops...',
-            text: 'Something went wrong . Please try again later.!',
+            title: 'Something went wrong . Please try again later.!',
+            showConfirmButton: false,
+            timer: 6000,
+         
           })
         });
     }

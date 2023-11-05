@@ -17,7 +17,7 @@ export default function TechStack(){
                             </div>
                             <div className="  flex flex-col gap-4   ">   
                                                   
-                                <div className="flex lg:flex-row flex-col items-center dark:bg-[#2d2e32] bg-white shadow-inner  text-center  p-6 gap-12 rounded-xl">
+                                <div className="flex lg:flex-row flex-col items-center  dark:bg-[#2d2e32] bg-white shadow-inner  text-center  p-6 gap-12 rounded-xl">
                                     <span className={`text-black font-bold dark:text-white  text-2xl ${BlackOpsOne.className}`}>Front-End </span>
                                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex items-center justify-center   gap-8">
                                     {
