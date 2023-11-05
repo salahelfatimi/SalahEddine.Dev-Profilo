@@ -20,10 +20,11 @@ export default function About(){
                         <Image  className=" rounded-md dark:block hidden "   src="/aboutDark.png" width={400} height={200} alt="About" />
 
                         <div className=' hidden lg:block  absolute -bottom-8 -right-8  '>
+                            
                             <Image  className=" circle-animation shadow-2xl rounded-full  bottom-0 left-0"   src="/CerclaImage.png" width={150} height={150} alt="About" />
-                            <div className=' absolute top-[3.1rem] right-[3.2rem]'>
-                            <Image src="/web-development.png" width={50} height={50} alt="emojiDesktop.png" />
-                            </div>
+                            
+                            <Image className='absolute inset-[50px]' src="/dev.svg" width={50} height={50} alt="dev" />
+                            
 
                         </div>
                     </div>
