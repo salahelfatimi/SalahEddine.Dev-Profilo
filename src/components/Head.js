@@ -30,8 +30,8 @@ import TechStack from './Tech-Stack'
                                         <span className=" text-[#86888c] dark:text-[##7a7a7a]  font-mono">   Hello, I&apos;m Salaheddine Elfatimi, an enthusiastic  Full Stack Developer based in Marrakech, Morocco. 📍</span>
                                     </div>
                                     <div className='flex flex-col lg:flex-row items-center gap-3 font-mono '>
-                                        <button className="bg-[#148BFB] dark:bg-[#bb86fc] dark:hover:text-[#fff] dark:text-black dark:border-[#bb86fc] dark:border-2 dark:hover:bg-[#121212]  text-white hover:bg-[#148bfbd2] shadow-2xl  rounded p-2 px-4 transition duration-700  font-bold "><a href="/SALAHEDDINE_ELFATIMI.pdf" target="_blank">RESUME</a></button>
-                                        <button onClick={() => {scrollToSection('contact')} } className=" dark:hover:text-white dark:text-black  dark:border-[#fff] dark:border-2  dark:hover:bg-[#121212]  bg-[#ffff] text-black shadow-2xl   rounded p-2 px-4 transition duration-700 ease-in-out font-bold ">SAY HELLO</button>
+                                        <button className="bg-[#148BFB] hover:bg-[#f9f9f9] hover:text-black border-2 hover:border-[#148BFB] dark:bg-[#bb86fc] dark:hover:text-[#fff] dark:text-black dark:border-[#bb86fc] dark:border-2 dark:hover:bg-[#121212]  text-white hover:bg-[#148bfbd2]   rounded p-2 px-4 transition duration-700  font-bold "><a href="/SALAHEDDINE_ELFATIMI.pdf" target="_blank">RESUME</a></button>
+                                        <button onClick={() => {scrollToSection('contact')} } className="hover:border-black border-2 border-white hover:bg-[#f9f9f9] dark:hover:text-white dark:text-black  dark:border-[#fff] dark:border-2  dark:hover:bg-[#121212]  bg-[#ffff] text-[#148bfbd2] hover:text-black    rounded p-2 px-4 transition duration-700 ease-in-out font-bold ">SAY HELLO</button>
                                         
                                     </div>
                                     
