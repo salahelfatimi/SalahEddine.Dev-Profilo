@@ -52,7 +52,7 @@
   
     return (
       <>
-      <div className=' bg-[#ffffff]'>
+      <div className=' bg-[#ffffff] dark:bg-[#121212]'>
         <div id='contact' className='   py-12 container'>
             
           <form className="contact-form" onSubmit={sendEmail}>
@@ -60,8 +60,8 @@
             <div>
               <div className="space-y-3">
                 <div className="pb-4 flex-col flex gap-2 items-center">
-                  <span className={`text-[#148BFB] font-bold font-mono text-4xl `}>Get In Touch</span>
-                  <span className={` font-mono font-semibold  text-black flex flex-col items-center text-center`}>Interested in working together? We should queue up a chat.<span> I&apos;ll buy the coffee.👇</span></span>
+                  <span className={`text-[#148BFB] dark:text-[#bb86fc] font-bold font-mono text-4xl `}>Get In Touch</span>
+                  <span className={` font-mono font-semibold  dark:text-white text-black flex flex-col items-center text-center`}>Interested in working together? We should queue up a chat.<span> I&apos;ll buy the coffee.👇</span></span>
                 </div>
                 <div className="flex justify-between gap-4">
                   <input
@@ -69,7 +69,7 @@
                     type="text"
                     name="from_name"
                     id="Name"
-                    className="bg-[#ffffff] text-black h-8 w-1/2 border p-4 font-mono text-xs"
+                    className="bg-[#ffffff] text-black dark:text-white h-8 w-1/2 border p-4 font-mono text-xs  dark:bg-[#3c4042] dark:border-[#bb86fc] dark:border-2 "
                     placeholder="Name"
                     value={formData.from_name}
                     onChange={handleInputChange}
@@ -79,7 +79,7 @@
                     type="email"
                     name="from_email"
                     id="Email"
-                    className="bg-[#ffffff] text-black w-1/2 h-8 border p-4 font-mono text-xs"
+                    className="bg-[#ffffff] text-black dark:text-white w-1/2 h-8 border p-4 font-mono text-xs  dark:bg-[#3c4042] dark:border-[#bb86fc] dark:border-2 "
                     placeholder="Email"
                     value={formData.from_email}
                     onChange={handleInputChange}
@@ -90,14 +90,14 @@
                   type="text"
                   name="subject"
                   id="subject"
-                  className="bg-[#ffffff] text-black w-full h-8 border p-4 font-mono text-xs"
+                  className="bg-[#ffffff] text-black dark:text-white w-full h-8 border p-4 font-mono text-xs  dark:bg-[#3c4042] dark:border-[#bb86fc] dark:border-2 "
                   placeholder="subject"
                   value={formData.subject}
                   onChange={handleInputChange}
                 />
                 <textarea
                   required
-                  className="form-control text-black bg-[#ffffff] border py-2 px-4 w-full font-mono text-xs"
+                  className="form-control text-black dark:text-white dark:bg-[#3c4042] dark:border-[#bb86fc] dark:border-2  bg-[#ffffff] border py-2 px-4 w-full font-mono text-xs"
                   name="message"
                   id="message"
                   rows="6"
@@ -105,7 +105,7 @@
                   value={formData.message}
                   onChange={handleInputChange}
                 />
-                <button type="submit" value="Send" className="border px-10 hover:bg-[#148bfbcb] duration-700  capitalize font-bold py-1 rounded bg-[#148BFB] text-white ">send</button>
+                <button type="submit" value="Send" className="border px-10 dark:bg-[#bb86fc] dark:hover:text-[#fff] dark:text-black dark:border-[#bb86fc] dark:border-2 dark:hover:bg-[#121212] hover:bg-[#148bfbcb] duration-700  capitalize font-bold py-1 rounded bg-[#148BFB] text-white ">send</button>
               </div>
             </div>
           </form>

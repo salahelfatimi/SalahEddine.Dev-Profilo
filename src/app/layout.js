@@ -1,8 +1,8 @@
 import './globals.css'
+import Providers from "./providers";
 
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export const metadata = {
   title: 'salahEddine.DEV',
@@ -17,7 +17,9 @@ export default function RootLayout({ children }) {
       <head>
        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }

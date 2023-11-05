@@ -2,78 +2,78 @@ export const FrontEnd =
 [{
     "id":1,
     "languageName":"Html",
-    "languageImage":"/html.png",
+    "languageImage":"/html.svg",
     "languageProgress":100
 },
 {
     "id":2,
     "languageName":"Css",
-    "languageImage":"/css.png",
+    "languageImage":"/css.svg",
     "languageProgress":50
 },{
     "id":3,
     "languageName":"Tailwind Css",
-    "languageImage":"/tailwindcss.jpg",
+    "languageImage":"/tailwindcss.svg",
     "languageProgress":90
 },{
     "id":4,
     "languageName":"Next.js",
-    "languageImage":"/next.png",
+    "languageImage":"/nextjs.svg",
     "languageProgress":60
 },{
     "id":5,
     "languageName":"Vite",
-    "languageImage":"/Vite.png",
+    "languageImage":"/vite.svg",
     "languageProgress":70
 },{
     "id":6,
     "languageName":"React",
-    "languageImage":"/react.png",
+    "languageImage":"/react.svg",
     "languageProgress":70
 },{
     "id":7,
     "languageName":"JS",
-    "languageImage":"/javascript.png",
+    "languageImage":"/javascript.svg",
     "languageProgress":70
 },{
     "id":8,
     "languageName":"Redux",
-    "languageImage":"/Redux.png",
+    "languageImage":"/redux.svg",
     "languageProgress":40
 }]
 export const BackEnd = 
 [{
     "id":1,
     "languageName":"Laravel",
-    "languageImage":"/Laravel.png",
+    "languageImage":"/laravel.svg",
     "languageProgress":50
 },
 {
     "id":2,
     "languageName":"PHP",
-    "languageImage":"/PHP.png",
+    "languageImage":"/php.svg",
     "languageProgress":50
 },{
     "id":3,
     "languageName":"MongoDB",
-    "languageImage":"/mongoDB.png",
+    "languageImage":"/mongodb.svg",
     "languageProgress":30
 },{
     "id":4,
     "languageName":"sql",
-    "languageImage":"/Sql.jpg",
+    "languageImage":"/sql.svg",
     "languageProgress":50
 }]
 export const Designe = 
 [{
     "id":1,
     "languageName":"Figma",
-    "languageImage":"/Figma.png",
+    "languageImage":"/figma.svg",
     "languageProgress":50
 },
 {
     "id":2,
     "languageName":"Canva",
-    "languageImage":"/Canva.png",
+    "languageImage":"/canva.svg",
     "languageProgress":50
 }]
