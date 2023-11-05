@@ -31,7 +31,7 @@ export default function Nav (){
         <>
             <div className="bg-[#ffffff] dark:bg-[#2d2e32] rounded-b-2xl  z-30  fixed top-0 right-0 left-0 shadow-2xl py-5 ">
                 <div className=" hidden lg:block">
-                <div className=" flex justify-between items-center px-12">
+                <div className=" flex justify-between items-center px-8">
                     <div>
                         <span className={` text-black dark:text-[#fff]  font-extrabold `}>SalahEddine.Dev</span>
                     </div>
@@ -64,7 +64,7 @@ export default function Nav (){
                     </div>
                 </div>
                     <div className="block lg:hidden">
-                        <div className="flex items-center justify-between px-8">
+                        <div className="flex items-center justify-between px-4">
                             <span className={` text-black dark:text-[#fff] font-extrabold `}>SalahEddine.Dev</span>
                             <button  onClick={()=>{setOpen(!open)}}>
                                 <svg className="dark:hidden block" fill="" width="28px" height="28px" viewBox="0 -2 28 28" xmlns="http://www.w3.org/2000/svg"><path d="m2.61 0h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 9.39h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/><path d="m2.61 18.781h22.431c1.441 0 2.61 1.168 2.61 2.61s-1.168 2.61-2.61 2.61h-22.431c-1.441 0-2.61-1.168-2.61-2.61s1.168-2.61 2.61-2.61z"/></svg>
