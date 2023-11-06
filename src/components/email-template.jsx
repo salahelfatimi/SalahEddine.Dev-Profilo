@@ -3,7 +3,7 @@ export const EmailTemplate = ({firstName , Email ,Msg , Phone}) => (
     
     <p><strong>My Name is : </strong>{firstName}</p>
     
-    <p >You've received a message from someone interested in your portfolio or a collaboration opportunity:</p>
+    <p >You&apos;ve received a message from someone interested in your portfolio or a collaboration opportunity:</p>
       <div>
         <p><strong>Name : </strong> {firstName}</p>
         <p><strong>Email : </strong> {Email}</p>
