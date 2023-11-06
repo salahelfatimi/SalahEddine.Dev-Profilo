@@ -12,6 +12,8 @@ export default function Contact() {
     email: '',
     subject: '',
     message: '',
+    tele:''
+   
   });
 const sendEmail =async (e)=>{
   e.preventDefault();
@@ -28,6 +30,8 @@ const sendEmail =async (e)=>{
       email: '',
       subject: '',
       message: '',
+      tele:''
+      
     })
     Swal.fire({
       position: 'center',
@@ -92,6 +96,19 @@ const sendEmail =async (e)=>{
                     onChange={handleInputChange}
                   />
                 </div>
+                
+                  <input
+                    required
+                    type="tel"
+                    placeholder="Enter phone number"
+                    name="tele"
+                    id="tele"
+                    className="bg-[#ffffff] text-black border-[#148afa]  dark:text-white h-8 w-full border-2 p-4 font-mono text-xs  dark:bg-[#3c4042] dark:border-[#bb86fc]  "
+                    value={formData.tele}
+                    onChange={handleInputChange}
+                  />
+                   
+                
                 <input
                   required
                   type="text"

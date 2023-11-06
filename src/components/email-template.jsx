@@ -1,6 +1,15 @@
-export const EmailTemplate = ({firstName}) => (
+export const EmailTemplate = ({firstName , Email ,Msg , Phone}) => (
   <div>
-    <h1>Welcome, {firstName}!</h1>
-    <p>Thank you for sending me a message. I will get back with you as soon as I can.</p>
+    
+    <p><strong>My Name is : </strong>{firstName}</p>
+    
+    <p >You've received a message from someone interested in your portfolio or a collaboration opportunity:</p>
+      <div>
+        <p><strong>Name : </strong> {firstName}</p>
+        <p><strong>Email : </strong> {Email}</p>
+        <p><strong>Phone Number : </strong> {Phone}</p>
+        <p><strong>Message : </strong>{Msg}</p>
+        
+      </div>
   </div>
 );
