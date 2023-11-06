@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
-import toast, { Toaster } from 'react-hot-toast';import { Black_Ops_One} from 'next/font/google'
+import toast, { Toaster } from 'react-hot-toast';
+import { Black_Ops_One} from 'next/font/google';
 const BlackOpsOne = Black_Ops_One({
     weight: '400',
     subsets: ['latin'],
