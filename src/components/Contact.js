@@ -19,6 +19,22 @@ export default function Contact() {
   const sendEmail =async (e)=>{
 
     e.preventDefault();
+    
+    if (!formData.name) {
+      return toast.error("Please enter your name");
+    }
+    if (!formData.email) {
+      return toast.error("Please enter your email");
+    }
+    if (!formData.tele) {
+      return toast.error("Please enter your phone number");
+    }
+    if (!formData.subject) {
+      return toast.error("Please enter a subject");
+    }
+    if (!formData.message) {
+      return toast.error("Please enter a message");
+    }
 
     const response = await fetch("/api/send", {
       method: "POST",
@@ -73,7 +89,7 @@ export default function Contact() {
                 </div>
                 <div className="flex justify-between gap-4">
                   <input
-                    required
+                    
                     type="text"
                     name="name"
                     id="Name"
@@ -83,7 +99,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                   />
                   <input
-                    required
+                    
                     type="email"
                     name="email"
                     id="Email"
@@ -95,7 +111,7 @@ export default function Contact() {
                 </div>
                 
                   <input
-                    required
+                    
                     type="tel"
                     placeholder="Enter phone number"
                     name="tele"
@@ -107,7 +123,7 @@ export default function Contact() {
                    
                 
                 <input
-                  required
+                  
                   type="text"
                   name="subject"
                   id="subject"
@@ -117,7 +133,7 @@ export default function Contact() {
                   onChange={handleInputChange}
                 />
                 <textarea
-                  required
+                  
                   className="form-control text-black border-[#148afa]  dark:text-white dark:bg-[#3c4042] dark:border-[#bb86fc] border-2  bg-[#ffffff]  py-2 px-4 w-full font-mono text-xs"
                   name="message"
                   id="message"
