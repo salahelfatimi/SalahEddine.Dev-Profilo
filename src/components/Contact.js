@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import Swal from 'sweetalert2';
-import { Black_Ops_One} from 'next/font/google'
+import toast, { Toaster } from 'react-hot-toast';import { Black_Ops_One} from 'next/font/google'
 const BlackOpsOne = Black_Ops_One({
     weight: '400',
     subsets: ['latin'],
@@ -15,42 +14,35 @@ export default function Contact() {
     tele:''
    
   });
-const sendEmail =async (e)=>{
-  e.preventDefault();
-  const response = await fetch("/api/send", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(formData),
-  });
-  if(response.status===200){
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-      tele:''
-      
-    })
-    Swal.fire({
-      position: 'center',
-      icon: 'success',
-      title: 'The message has been sent successfully',
-      showConfirmButton: false,
-      timer: 6000,
-    })
+  
+
+  const sendEmail =async (e)=>{
+
+    e.preventDefault();
+
+    const response = await fetch("/api/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+    if(response.status===200){
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+        tele:''
+        
+      })
+      toast.success(`Hey ${formData.name}, your message was sent successfully! I Will Contact you soon! 👋`, {
+        position: 'bottom-right',
+        duration: 7000,
+      });
+    
+    }
   }
-  else{
-    Swal.fire({
-      position: 'center',
-      icon: 'error',
-      title: 'Something went wrong. Please try again later!',
-      showConfirmButton: false,
-      timer: 6000,
-    })
-  }
-}
   
 
   const handleInputChange = (e) => {
@@ -61,11 +53,16 @@ const sendEmail =async (e)=>{
     });
   };
 
+
   return (
       <>
       <div className=' bg-[#ffffff] dark:bg-[#121212]'>
         <div id='contact' className='   py-12 container'>
-            
+        
+        <Toaster  toastOptions={{
+          className: 'dark:bg-[#121212] dark:text-white bg-white text-black ',
+        }}/>
+
           <form className="contact-form" onSubmit={sendEmail}>
           
             <div>
