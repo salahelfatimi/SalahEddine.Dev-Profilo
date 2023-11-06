@@ -19,7 +19,7 @@ export default function Contact() {
   const sendEmail =async (e)=>{
 
     e.preventDefault();
-    
+
     if (!formData.name) {
       return toast.error("Please enter your name");
     }
@@ -57,6 +57,12 @@ export default function Contact() {
         duration: 7000,
       });
     
+    }
+    else{
+      toast.error(`Hello ${formData.name}, it appears that your previous message was not sent successfully. Please try sending it again later. ` , {
+        position: 'bottom-right',
+        duration: 7000,
+      });
     }
   }
   
