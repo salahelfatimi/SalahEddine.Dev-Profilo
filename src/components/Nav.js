@@ -90,7 +90,7 @@ export default function Nav (){
                         <button onClick={() => {scrollToSection('about'), setOpen(!open) } }  className=" hover:text-[#148BFB] transition hover:dark:text-[#bb86fc] duration-700">About</button>
                         <button onClick={() => {scrollToSection('project'), setOpen(!open) } }  className=" hover:text-[#148BFB] transition hover:dark:text-[#bb86fc] duration-700">Portfolio</button>
                         <button onClick={() => {scrollToSection('contact'), setOpen(!open) } } className=" hover:text-[#148BFB] transition hover:dark:text-[#bb86fc] duration-700">Contact</button>
-                        <button onClick={()=> setTheme(theme === "dark" ? "light" : "dark")} className=" ">
+                        <button onClick={()=>{  setTheme(theme === "dark" ? "light" : "dark"), setOpen(!open)  }} className=" ">
                             <svg className={` ${theme === "dark"?"hidden":"block"}`} width="50px" height="50px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                                     <g id="Layer_2" data-name="Layer 2">
                                     <g id="Icons">
