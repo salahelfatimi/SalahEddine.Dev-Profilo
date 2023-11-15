@@ -18,10 +18,10 @@ export default function About(){
 
                         <div className=' hidden lg:block  absolute -bottom-8 -right-8  '>
                             
-                            <Image  className=" dark:hidden block circle-animation shadow-2xl rounded-full  bottom-0 left-0"   src="/CerclaImage.png" width={150} height={150} alt="About" />
-                            <Image  className=" dark:block hidden circle-animation shadow-2xl rounded-full  bottom-0 left-0"   src="/CerclaImageDark.png" width={150} height={150} alt="About" />
+                            <Image  className=" dark:hidden block circle-animation shadow-2xl rounded-full  bottom-0 left-0"   src="/image/CerclaImage.png" width={150} height={150} alt="About" />
+                            <Image  className=" dark:block hidden circle-animation shadow-2xl rounded-full  bottom-0 left-0"   src="/image/CerclaImageDark.png" width={150} height={150} alt="About" />
 
-                            <Image className='absolute inset-[50px]' src="/dev.svg" width={50} height={50} alt="dev" />
+                            <Image className='absolute inset-[50px]' src="icon/dev.svg" width={50} height={50} alt="dev" />
                             
 
                         </div>

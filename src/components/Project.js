@@ -1,11 +1,21 @@
-import { project } from "@/json/Project";
+"use client"
 import { Black_Ops_One} from 'next/font/google'
+import { useEffect, useState } from 'react'
 
 const BlackOpsOne = Black_Ops_One({
     weight: '400',
     subsets: ['latin'],
 })
 export default function Project(){
+    const [dataProject,setDataProject]=useState([])
+    useEffect(()=>{
+        const  fetchdata = async () => {
+            const response= await fetch("/json/Project.json")
+            const data= await response.json()
+            setDataProject(data)
+        }
+        fetchdata()
+    },[])
     return(
         <>
             <div id="project" className="bg-[#f9f9f9] dark:bg-[#121212] py-12">
@@ -13,7 +23,7 @@ export default function Project(){
                 <span className={`text-[#148BFB] dark:text-[#bb86fc] font-bold font-mono text-4xl text-start ${BlackOpsOne.className}`}>Some Things I&apos;ve Built</span>
                 <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-3">
                 { 
-                    project.map((ele,index)=>(
+                    dataProject.map((ele,index)=>(
                         <article key={index} className="bg-third p-6 font-mono rounded-md dark:bg-[#3c4042] bg-[#ffffff] ">
                             <div className="flex gap-6 justify-between items-center mb-4">
                                 <div className="text-main">

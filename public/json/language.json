@@ -1,5 +1,5 @@
-export const FrontEnd = 
-[{
+{
+"FrontEnd" : [{
     "id":1,
     "languageName":"Html",
     "languageImage":"/html.svg",
@@ -40,9 +40,8 @@ export const FrontEnd =
     "languageName":"Redux",
     "languageImage":"/redux.svg",
     "languageProgress":40
-}]
-export const BackEnd = 
-[{
+}],
+"BackEnd" :[{
     "id":1,
     "languageName":"Laravel",
     "languageImage":"/laravel.svg",
@@ -63,9 +62,8 @@ export const BackEnd =
     "languageName":"sql",
     "languageImage":"/sql.svg",
     "languageProgress":50
-}]
-export const Designe = 
-[{
+}],
+"Designe" : [{
     "id":1,
     "languageName":"Figma",
     "languageImage":"/figma.svg",
@@ -76,4 +74,4 @@ export const Designe =
     "languageName":"Canva",
     "languageImage":"/canva.svg",
     "languageProgress":50
-}]
+}]}

@@ -35,7 +35,7 @@ const BlackOpsOne = Black_Ops_One({
                                         <span className=" text-[#86888c] dark:text-[##7a7a7a]  font-mono">   Hello, I&apos;m Salaheddine Elfatimi, an enthusiastic  Full Stack Developer based in Marrakech, Morocco. 📍</span>
                                     </div>
                                     <div className='flex flex-col lg:flex-row items-center gap-3 font-mono '>
-                                    <a href="https://flowcv.com/api/resumes/download?resumeId=62c07bf5dd43da5cd496fe23&languageCode=en" target="_blank"><button className="bg-[#148BFB] border-[#f9f9f9] hover:bg-[#f9f9f9] hover:text-black border-2 hover:border-[#148BFB] dark:bg-[#bb86fc] dark:hover:text-[#fff] dark:text-black dark:border-[#bb86fc] dark:border-2 dark:hover:bg-[#121212]  text-white hover:bg-[#148bfbd2]   rounded p-2 px-4 transition duration-700  font-bold ">RESUME</button></a>
+                                    <a href="/pdf/Resume.pdf" target="_blank"><button className="bg-[#148BFB] border-[#f9f9f9] hover:bg-[#f9f9f9] hover:text-black border-2 hover:border-[#148BFB] dark:bg-[#bb86fc] dark:hover:text-[#fff] dark:text-black dark:border-[#bb86fc] dark:border-2 dark:hover:bg-[#121212]  text-white hover:bg-[#148bfbd2]   rounded p-2 px-4 transition duration-700  font-bold ">RESUME</button></a>
                                         <button onClick={() => {scrollToSection('contact')} } className="hover:border-black border-2 border-white hover:bg-[#f9f9f9] dark:hover:text-white dark:text-black  dark:border-[#fff] dark:border-2  dark:hover:bg-[#121212]  bg-[#ffff] text-[#148bfbd2] hover:text-black    rounded p-2 px-4 transition duration-700 ease-in-out font-bold ">SAY HELLO</button>
                                         
                                     </div>
@@ -43,8 +43,8 @@ const BlackOpsOne = Black_Ops_One({
                                
                             </div>
                             <div>
-                                <Image className=" dark:hidden block" src="/profileWhite.png" width={300} height={300} alt="profile" />
-                                <Image className="dark:block hidden" src="/profileDark.png" width={300} height={300} alt="profile" />
+                                <Image className=" dark:hidden block" src="/image/profileWhite.png" width={300} height={300} alt="profile" />
+                                <Image className="dark:block hidden" src="/image/profileDark.png" width={300} height={300} alt="profile" />
 
                             </div>
                         </div>

@@ -1,7 +1,8 @@
 "use client"
-import { FrontEnd,BackEnd,Designe } from '@/json/language'
+
 import { Black_Ops_One} from 'next/font/google'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 const BlackOpsOne = Black_Ops_One({
     weight: '400',
     subsets: ['latin'],
@@ -9,6 +10,25 @@ const BlackOpsOne = Black_Ops_One({
 
 
 export default function TechStack(){
+    const [data, setData] = useState({
+        frontEnd:[],
+        backEnd:[],
+        designe:[]
+    });
+      
+      useEffect(() => {
+        const fetchData = async () => {
+            const response = await fetch("/json/language.json")
+            const data = await response.json()
+            const { FrontEnd, BackEnd, Designe } = data
+            setData({
+                frontEnd:FrontEnd,
+                backEnd:BackEnd,
+                designe:Designe
+            })
+        };
+        fetchData();
+      }, []);
     return(
         <>
         <div className="space-y-12">
@@ -21,14 +41,10 @@ export default function TechStack(){
                                     <span className={`text-black font-bold dark:text-white   text-2xl ${BlackOpsOne.className}`}>Front-End </span>
                                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex items-center justify-center   gap-8">
                                     {
-                                        FrontEnd.map((res,index)=>(
+                                        data.frontEnd.map((res,index)=>(
                                             <div key={index} className=' relative'>
-                                                <Image  className="rounded-md"   src={res.languageImage} width={60} height={60} alt={res.languageName} />
-                                                {/* <div className={`rounded-md w-[100%]    p-4 ` }>
-                                                <div className="w-full bg-gray-200 rounded-full h-2.5 ">
-                                                    <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: `${res.languageProgress}% `, transition: 'width 0.5s ease' }}></div>
-                                                </div>                                                    
-                                                </div>   */}
+                                                <Image  className="rounded-md"   src={`/icon/${ res.languageImage }`} width={50} height={50} alt={res.languageName} />
+                                                
                                             </div>   
                                         ))                                       
                                     }                                   
@@ -40,15 +56,10 @@ export default function TechStack(){
                                         <span className={`text-black font-bold dark:text-white  text-2xl ${BlackOpsOne.className}`}>Back-End </span>
                                         <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex items-center  justify-center  gap-8">
                                         {
-                                            BackEnd.map((res,index)=>(
+                                            data.backEnd.map((res,index)=>(
                                                 <div key={index} >
-                                                    <Image  className="rounded-md "   src={res.languageImage} width={60} height={60} alt={res.languageName} />
-                                                    {/* <div className={`rounded-md w-[100%]   p-4 ` }>
-                                                    <div className="w-full bg-gray-200 rounded-full h-2.5 ">
-                                                        <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: `${res.languageProgress}% `, transition: 'width 0.5s ease' }}></div>
-                                                    </div>
-                                                        
-                                                    </div>   */}
+                                                    <Image  className="rounded-md "   src={`/icon/${ res.languageImage }`} width={50} height={50} alt={res.languageName} />
+                                                   
                                                 </div>   
                                             ))    
                                         }                                                                 
@@ -58,16 +69,11 @@ export default function TechStack(){
                                         <span className={`text-black font-bold dark:text-white  text-2xl ${BlackOpsOne.className}`}>Designe</span>
                                         <div className=" grid grid-cols-2 lg:flex items-center gap-8 ">
                                         {
-                                            Designe.map((res,index)=>(
+                                            data.designe.map((res,index)=>(
                                                 <div key={index} className=' ' >
-                                                    <Image  className=" rounded-md "   src={res.languageImage} width={60} height={60} alt={res.languageName} />
+                                                    <Image  className=" rounded-md "   src={`/icon/${ res.languageImage }`} width={50} height={50} alt={res.languageName} />
                                                     
-                                                    {/* <div className='rounded-md w-[100%]   p-4 absolute '>
-                                                        <div className="w-full bg-gray-200 rounded-full h-2.5 ">
-                                                            <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: `${res.languageProgress}% `, transition: 'width 0.5s ease' }}></div>
-                                                        </div>
-                                                        
-                                                    </div>   */}
+                                            
                                                 </div>   
                                             ))                                  
                                         }                                                                     
