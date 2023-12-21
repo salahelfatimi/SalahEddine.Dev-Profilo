@@ -13,8 +13,8 @@ export default function About(){
                 <div className=" container grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-center">
                 <div className="flex justify-center">
                     <div className=' relative'>
-                        <Image  className=" rounded-md dark:hidden block "   src="/image/aboutWhite.png" width={400} height={200} alt="About" />
-                        <Image  className=" rounded-md dark:block hidden "   src="/image/aboutDark.png" width={400} height={200} alt="About" />
+                       
+                        <Image  className=" rounded-md "   src="/image/aboutImage.png" width={400} height={200} alt="About" />
 
                         <div className=' hidden lg:block  absolute -bottom-8 -right-8  '>
                             

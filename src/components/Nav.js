@@ -41,24 +41,11 @@ export default function Nav (){
                         <button onClick={() => scrollToSection('about')}  className=" hover:text-[#148BFB] transition  hover:dark:text-[#bb86fc] duration-700">About</button>
                         <button onClick={() => {scrollToSection('project')} }  className=" hover:text-[#148BFB] transition hover:dark:text-[#bb86fc] duration-700">Portfolio</button>
                         <button onClick={() => {scrollToSection('contact')} }  className=" hover:text-[#148BFB] transition hover:dark:text-[#bb86fc] duration-700">Contact</button>
-                        <button onClick={()=> setTheme(theme === "dark" ? "light" : "dark")} className=" ">
-                        <svg className={`${theme === "dark"?"hidden":"block"}`} width="28px" height="28px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                <g id="Layer_2" data-name="Layer 2">
-                                <g id="Icons">
-                                <g>
-                                    <rect width="48" height="48" fill="none"/>
-                                    <g>
-                                    <path d="M14,24A10,10,0,0,0,24,34V14A10,10,0,0,0,14,24Z"/>
-                                    <path d="M24,2A22,22,0,1,0,46,24,21.9,21.9,0,0,0,24,2ZM6,24A18.1,18.1,0,0,1,24,6v8a10,10,0,0,1,0,20v8A18.1,18.1,0,0,1,6,24Z"/>
-                                    </g>
-                                </g>
-                                </g>
-                            </g>
-                        </svg>
-                        <svg className={` ${theme === "dark"?"block":"hidden"}`}  width="28px" height="28px" viewBox="0 0 24 24" fill="#ffff" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="#ffff"/>
-                            <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="#ffff"/>
-                        </svg>
+                        <button onClick={()=>{ setTheme(theme === "dark" ? "light" : "dark"),setOpen(!open)}}>
+                            <svg  className={`transition duration-700  ${theme==="dark"?"rotate-180":"rotate-0"}`}  width="35px" height="35px" viewBox="0 0 24 24" fill={theme === "light" ? "#000" : "#fff"} xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill={theme === "light" ? "#000" : "#fff"}/>
+                                <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill={theme === "light" ? "#000" : "#fff"}/>
+                            </svg>
                         </button>
                     </div>
                     </div>
@@ -90,24 +77,11 @@ export default function Nav (){
                         <button onClick={() => {scrollToSection('about'), setOpen(!open) } }  className=" hover:text-[#148BFB] transition hover:dark:text-[#bb86fc] duration-700">About</button>
                         <button onClick={() => {scrollToSection('project'), setOpen(!open) } }  className=" hover:text-[#148BFB] transition hover:dark:text-[#bb86fc] duration-700">Portfolio</button>
                         <button onClick={() => {scrollToSection('contact'), setOpen(!open) } } className=" hover:text-[#148BFB] transition hover:dark:text-[#bb86fc] duration-700">Contact</button>
-                        <button onClick={()=>{  setTheme(theme === "dark" ? "light" : "dark"), setOpen(!open)  }} className=" ">
-                            <svg className={` ${theme === "dark"?"hidden":"block"}`} width="50px" height="50px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="Layer_2" data-name="Layer 2">
-                                    <g id="Icons">
-                                    <g>
-                                        <rect width="48" height="48" fill="none"/>
-                                        <g>
-                                        <path d="M14,24A10,10,0,0,0,24,34V14A10,10,0,0,0,14,24Z"/>
-                                        <path d="M24,2A22,22,0,1,0,46,24,21.9,21.9,0,0,0,24,2ZM6,24A18.1,18.1,0,0,1,24,6v8a10,10,0,0,1,0,20v8A18.1,18.1,0,0,1,6,24Z"/>
-                                        </g>
-                                    </g>
-                                    </g>
-                                </g>
+                        <button onClick={()=>{ setTheme(theme === "dark" ? "light" : "dark"),setOpen(!open)}}>
+                            <svg  className={`transition duration-700  ${theme==="dark"?"rotate-180":"rotate-0"}`}  width="50px" height="50px" viewBox="0 0 24 24" fill={theme === "light" ? "#000" : "#fff"} xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill={theme === "light" ? "#000" : "#fff"}/>
+                                <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill={theme === "light" ? "#000" : "#fff"}/>
                             </svg>
-                            <svg className={` ${theme === "dark"?"block":"hidden"}`}  width="50px" height="50px" viewBox="0 0 24 24" fill="#ffff" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z" fill="#ffff"/>
-                            <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z" fill="#ffff"/>
-                        </svg>
                         </button>
                     </div>
                 </div>
