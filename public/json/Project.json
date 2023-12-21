@@ -36,4 +36,15 @@
         "github":"https://github.com/salahelfatimi/Food_webSite",
         "vercal":"https://foods-web.vercel.app/"
     }
+    ,
+    
+    {
+        "id":5,
+        "title":"InnovTech",
+        "date":"December 2023",
+        "description":"InnovTech unifies and collaborates UCA laboratories to address strategic objectives, fostering synergy among researchers regardless of affiliation. This approach highlights focused research areas through nationally and internationally competitive teams. Comprising 14 labs and 5 research teams from 6 UCA institutions across Marrakech, Safi, and Essaouira, InnovTech's complementary efforts aim to establish a benchmark hub for technological innovation on a national and global scale.",
+        "lungageBuild":["Next.js","Tailwind CSS","JavaScript"],
+        "github":"https://github.com/salahelfatimi/website-InnovTech",
+        "vercal":"https://innovtech.vercel.app/"
+    }
 ]
