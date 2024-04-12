@@ -44,5 +44,14 @@
     "lungageBuild": ["Next.js", "Tailwind CSS", "JavaScript"],
     "github": "https://github.com/salahelfatimi/website-InnovTech",
     "vercal": "https://innovtech.vercel.app/"
+  },
+  {
+    "id": 6,
+    "title": "explorem",
+    "date": "April 2024",
+    "description": "Explorem SARL's website serves as a comprehensive platform offering expert services in human resources, language, and nursing formation. With a commitment to excellence and transparency, the website provides seamless navigation to explore various services and success stories. Through its intuitive design, visitors can discover their path to professional success with ease. Join Explorem SARL and unlock your potential in the global market.",
+    "lungageBuild": ["Next.js", "Tailwind CSS", "JavaScript","MongoDB","Prisma"],
+    "github": "https://github.com/salahelfatimi/",
+    "vercal": "https://www.explorem.net/"
   }
 ]
