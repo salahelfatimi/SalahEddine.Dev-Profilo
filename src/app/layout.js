@@ -3,18 +3,28 @@ import Providers from "./providers";
 
 
 
-
-export const metadata = {
-  title: 'salahEddine.DEV',
-  description: 'Protfilo',
-  openGraph: {
+export async function generateMetadata() {
+  return {
     title: 'salahEddine.DEV',
-    description: 'Protfilo',
-    images: [`./opengraph-image.jpg`],
-  },
-  
+    description: 'Full Stack Developer Protfilo  ',
+    metadataBase: new URL(`https://www.salaheddin-dev.me`),
+    images: [
+      {
+        url: `https://www.salaheddin-dev.me/opengraph-image.jpg`,
+        width: 1200,
+        height: 630,
+      },
+      {
+        url: `https://www.salaheddin-dev.me/opengraph-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "www.salaheddin-dev",
+      },
+    ],
+    locale: "en",
+    type: "website ",
+  };
 }
-
 
 export default function RootLayout({ children }) {
   return (
